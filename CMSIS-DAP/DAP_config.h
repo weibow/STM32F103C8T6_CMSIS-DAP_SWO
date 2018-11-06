@@ -387,13 +387,23 @@ typedef enum Pin_e {
 // Debug Unit LEDs
 #if defined ( BLUEPILL )
 
-#define LED_CONNECTED_RCC   RCC_APB2ENR_IOPCEN //PC13 - Bluepill
-#define LED_CONNECTED_PORT  GPIOC
-#define LED_CONNECTED_PIN   13
+//#define LED_CONNECTED_RCC   RCC_APB2ENR_IOPCEN //PC13 - Bluepill
+//#define LED_CONNECTED_PORT  GPIOC
+//#define LED_CONNECTED_PIN   13
 
-#define LED_RUNNING_RCC     RCC_APB2ENR_IOPCEN //PC13 - Bluepill
-#define LED_RUNNING_PORT    GPIOC
-#define LED_RUNNING_PIN     13
+//#define LED_RUNNING_RCC     RCC_APB2ENR_IOPCEN //PC13 - Bluepill
+//#define LED_RUNNING_PORT    GPIOC
+//#define LED_RUNNING_PIN     13
+
+#define LED_CONNECTED_RCC   RCC_APB2ENR_IOPAEN //PC13 - Bluepill
+#define LED_CONNECTED_PORT  GPIOA
+#define LED_CONNECTED_PIN   9
+
+#define LED_RUNNING_RCC     RCC_APB2ENR_IOPAEN //PC13 - Bluepill
+#define LED_RUNNING_PORT    GPIOA
+#define LED_RUNNING_PIN     9
+
+
 
 #elif defined ( BOARD_V1 ) || defined ( BOARD_V2 )
 
